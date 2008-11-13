@@ -1,0 +1,3 @@
+adv_crypto is the same library as erlang's crypto except it includes
+sha256 and sha512 methods.  adv_crypto should be up to date with
+the default crypto library but may be one version behind at any time.
