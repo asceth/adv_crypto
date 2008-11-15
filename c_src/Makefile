@@ -5,8 +5,8 @@ CPPFLAGS = -I/usr/local/ssl/include
 SSL_CFLAGS = -DHAVE_SSL
 SSL_LIBS = -L/usr/local/ssl/lib -lssl -lcrypto
 
-ERLANG_CFLAGS = -I/usr/local/lib/erlang/lib/erl_interface-3.5.8/include -I/usr/local/lib/erlang/usr/include
-ERLANG_LIBS = -L/usr/local/lib/erlang/lib/erl_interface-3.5.8/lib -lerl_interface -lei
+ERLANG_CFLAGS = -I/usr/local/lib/erlang/lib/erl_interface-3.5.9/include -I/usr/local/lib/erlang/usr/include
+ERLANG_LIBS = -L/usr/local/lib/erlang/lib/erl_interface-3.5.9/lib -lerl_interface -lei
 
 ifeq ($(shell uname),Darwin)
 	DYNAMIC_LIB_CFLAGS = -fPIC -bundle -flat_namespace -undefined suppress
