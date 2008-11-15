@@ -1,3 +1,7 @@
 adv_crypto is the same library as erlang's crypto except it includes
 sha256 and sha512 methods.  adv_crypto should be up to date with
 the default crypto library but may be one version behind at any time.
+
+If the driver fails to link on erl_interface open up c_src/Makefile
+and change the erl_interface path to the one you have on your
+computer.  Right now its set to link against OTP R12B-5.
